@@ -61,7 +61,7 @@ import {
         <Card className="mb-2">
           <CardHeader className="items-center gap-2 pb-2">
           <div className="mt-0.5 mb-2 flex flex-col items-center">
-            <CardTitle className="text-2xl font-bold text-foreground">Recuperar Senha</CardTitle>
+            <CardTitle className="text-xl">Recuperar Senha</CardTitle>
             <CardDescription className="text-center text-muted-foreground">
                 {enviado
                 ? "Verifique sua caixa de entrada"
