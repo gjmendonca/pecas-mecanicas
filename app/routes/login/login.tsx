@@ -37,7 +37,6 @@ const loginSchema = z.object({
   password: z
     .string()
     .min(1, "Senha é obrigatória.")
-    .min(6, "A senha deve ter pelo menos 6 caracteres."),
 })
 
 type LoginFormData = z.infer<typeof loginSchema>
@@ -130,7 +129,7 @@ export default function LoginPage() {
 
                         {/* CORREÇÃO AQUI */}
                         <Link
-                          to="/recuperar-senha"
+                          to="/recuperarSenha"
                           className="text-xs text-primary hover:underline"
                         >
                           Esqueci a senha

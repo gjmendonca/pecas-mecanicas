@@ -24,7 +24,9 @@ interface AuthContextType {
   register: (data: {
     name: string
     email: string
+    emailConfirm: string
     password: string
+    passwordConfirm: string
   }) => { success: boolean; error?: string }
   logout: () => void
 }
@@ -61,7 +63,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     (data: {
       name: string
       email: string
+      emailConfirm: string
       password: string
+      passwordConfirm: string
     }): { success: boolean; error?: string } => {
       const existing = findUserByEmail(data.email)
       if (existing) {
