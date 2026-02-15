@@ -20,6 +20,7 @@ export default function DashboardPage() {
   return (
     <div className="flex min-h-screen bg-muted/40">
 
+      {/* Sidebar Mobile */}
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button
@@ -41,7 +42,7 @@ export default function DashboardPage() {
 
         {/* HEADER */}
         <div className="flex items-center gap-4">
-          <h1 className="text-2xl font-bold">Dashboard</h1>
+          <h1 className="text-2xl font-bold">Configurações</h1>
         </div>
 
         {/* METRIC CARDS */}

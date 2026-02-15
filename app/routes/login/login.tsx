@@ -64,7 +64,7 @@ export default function LoginPage() {
 
       if (result.success) {
         toast.success("Login realizado com sucesso!")
-        navigate("/dashboard")
+        navigate("/app")
       } else {
         toast.error(result.error || "Erro ao realizar login.")
       }
@@ -183,7 +183,7 @@ export default function LoginPage() {
               Não tem uma conta?{" "}
               {/* CORREÇÃO AQUI */}
               <Link
-                to="/cadastro"
+                to="/cadastroUsuario"
                 className="font-medium text-primary hover:underline"
               >
                 Cadastre-se
