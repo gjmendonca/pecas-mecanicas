@@ -6,12 +6,17 @@ export interface User {
   createdAt: string
 }
 
+
 export interface Part {
   id: string
   name: string
   description: string
-  price: number
-  imageUrl: string
+  price: string
+  images: {
+    url: string
+    isMain: boolean
+  }[]
   userId: string
   createdAt: string
 }
+
